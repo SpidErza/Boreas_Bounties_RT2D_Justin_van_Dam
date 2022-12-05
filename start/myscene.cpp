@@ -18,6 +18,7 @@ MyScene::MyScene() : Scene()
 	// the Sprite is added in Constructor of MyEntity.
 	myentity = new MyEntity();
 	myentity->position = Point2(SWIDTH/2, SHEIGHT/2);
+	myentity->scale = Point(0.5f, 0.5f);
 
 	// create the scene 'tree'
 	// add myentity to this Scene as a child.
@@ -46,12 +47,12 @@ void MyScene::update(float deltaTime)
 	// ###############################################################
 	// Spacebar scales myentity
 	// ###############################################################
-	if (input()->getKeyDown(KeyCode::Space)) {
-		myentity->scale = Point(0.5f, 0.5f);
-	}
-	if (input()->getKeyUp(KeyCode::Space)) {
-		myentity->scale = Point(1.0f, 1.0f);
-	}
+	//if (input()->getKeyDown(KeyCode::Space)) {
+	//	myentity->scale = Point(0.5f, 0.5f);
+	//}
+	//if (input()->getKeyUp(KeyCode::Space)) {
+	//	myentity->scale = Point(1.0f, 1.0f);
+	//}
 
 	// ###############################################################
 	// Rotate color

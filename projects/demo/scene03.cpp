@@ -180,7 +180,7 @@ void Scene03::updateSpaceShip(float deltaTime)
 	static Polar polar = Polar((rand()%360) * DEG_TO_RAD, 400.0f);
 
 	if (input()->getKey( KeyCode::Up )) {
-		spaceship->line()->color = RED;
+		//spaceship->line()->color = RED;
 		velocity += polar.cartesian() * deltaTime; // thrust
 	}
 	if (input()->getKey( KeyCode::Right )) {
